@@ -41,7 +41,7 @@ function Outro() {
     >
       <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/25 text-2xl text-bone transition group-hover:scale-110 group-hover:border-crimson-2 group-hover:text-crimson-2">↗</span>
       <span className="font-display text-3xl tracking-wide text-bone">More on GitHub</span>
-      <span className="text-xs text-mist">github.com/Sushmitadasari</span>
+      <span className="text-xs text-mist">{profile.links.github.replace(/^https?:\/\//, '')}</span>
     </a>
   );
 }
