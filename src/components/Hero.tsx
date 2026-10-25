@@ -46,7 +46,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const floating = [
     { text: education[0].score, sub: 'B.E. ECE', pos: 'left-[2%] top-[30%]', depth: 1 },
     { text: `${achievements[0].title}`, sub: achievements[0].org, pos: 'right-[0%] top-[18%]', depth: -1 },
-    { text: 'Python · C++ · KiCad', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
+    { text: 'Flying Probe · Python · ICT', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];
 
   return (
