@@ -15,10 +15,10 @@ export const profile = {
   seriesTag: 'THE SERIES',
   /** Fictional studio card shown at the very start of the opening sequence. */
   originalLabel: 'A GAWAS ORIGINAL',
-  role: 'Electronics & Communication Engineer',
-  tagline: ['Electronics & Communication Engineer', 'Hardware & Embedded Systems', 'Industrial Automation & Robotics'],
+  role: 'PCBA Test Engineer',
+  tagline: ['PCBA Test Engineer @ Siemens', 'Hardware & PCBA Test Validation', 'Industrial Automation & Robotics'],
   intro:
-    'An Electronics & Communication Engineer (Honours in IoT) and Industrial Automation specialist at Siemens Verna. Building high-throughput systems, autonomous terrain rovers, and automated PCBA test workflows with Python, C++, Edge ML, and KiCad.',
+    'PCBA Test Engineer (On-Role) at Siemens Verna and Electronics & Communication Engineer (Honours in IoT). Leading automated board-level testing, In-Circuit Testing (ICT), Flying Probe diagnostics, and autonomous robotic systems with Python, C++, Edge ML, and KiCad.',
   location: 'Sanquelim, Goa, India',
   email: 'prasadgawas501@gmail.com',
   links: {
@@ -61,9 +61,21 @@ export const education = [
 export const experience = [
   {
     company: 'Siemens (Technology Dept)',
+    role: 'PCBA Test Engineer (On-Role)',
+    place: 'Verna, Goa, India',
+    period: 'February 2026 – Present',
+    points: [
+      'Promoted to full On-Role PCBA Test Engineer leading board-level testing, diagnostic strategies, and test coverage planning across SMT and THT production lines.',
+      'Directing In-Circuit Testing (ICT), Flying Probe testing workflows, and JTAG / Boundary Scan configurations for high-reliability manufacturing.',
+      'Integrating automated test sequencing, live machine telemetry, and machine learning defect inspection into standard operating procedures.',
+      'Ensuring zero-defect shipment standards through automated root-cause analysis, signal tracing, and net-level fault isolation.',
+    ],
+  },
+  {
+    company: 'Siemens (Technology Dept)',
     role: 'Apprentice',
     place: 'Verna, Goa, India',
-    period: 'September 2025 – Present',
+    period: 'September 2025 – February 2026',
     points: [
       'Developed software to evaluate cycle time and track downtime for DEK SMT stencil printer.',
       'Created Bulk Program Generators for Ersa Three/20 and Seho Reflow machines with precise parameter mapping (heating, cooling, convection, and CBS/Park positions).',
@@ -477,7 +489,7 @@ export const seasons: Season[] = [
     number: 4,
     title: 'Industrial Scale at Siemens',
     period: '2024 – Present',
-    synopsis: 'Deploying production-grade test automation, AOI optical defect software, and AI visual inspection at Siemens Verna.',
+    synopsis: 'From intern to apprentice to On-Role PCBA Test Engineer at Siemens Verna — leading automated PCBA testing, Saki AOI, and reflow automation.',
     episodes: [
       {
         code: 'S04 E01',
@@ -489,18 +501,18 @@ export const seasons: Season[] = [
       },
       {
         code: 'S04 E02',
-        title: 'Reflow Program Generators & Telemetry',
-        description: 'Built bulk program generators for Ersa Three/20 and Seho Reflow machines and developed daily operational downtime analysis tools.',
+        title: 'The Apprentice & Telemetry Architect',
+        description: 'Built bulk program generators for Ersa & Seho reflow machines and engineered production telemetry & alert systems.',
         tags: ['Ersa Reflow', 'Seho', 'Python Telemetry'],
-        runtime: 'Sep 2025 – Present',
+        runtime: 'Sep 2025 – Feb 2026',
         palette: violet,
       },
       {
         code: 'S04 E03',
-        title: 'ETHON.AI Inspection & Alert Engine',
-        description: 'Trained ETHON.AI deep learning models for THT lines and engineered alert generation systems for corrupted programs and errors.',
-        tags: ['ETHON.AI', 'THT Lines', 'Alert Generation'],
-        runtime: 'In Production',
+        title: 'PCBA Test Engineer (On-Role)',
+        description: 'Promoted to full On-Role PCBA Test Engineer at Siemens Verna, leading board-level testing, ICT, Flying Probe, and test coverage planning.',
+        tags: ['Siemens On-Role', 'PCBA Testing', 'ICT', 'JTAG'],
+        runtime: 'Feb 2026 – Present',
         palette: crimson,
       },
     ],
@@ -534,16 +546,16 @@ export const seasons: Season[] = [
 export type TopPick = { label: string; title: string; detail: string; palette: Palette };
 
 export const topPicks: TopPick[] = [
+  { label: 'Current role', title: 'PCBA Test Engineer', detail: 'On-Role at Siemens Verna (Promoted Feb 2026)', palette: ocean },
   { label: 'Primary languages', title: 'Python & C++', detail: 'Systems, test automation & embedded firmware', palette: amber },
   { label: 'Published research', title: 'ISJEM Journal', detail: 'Autonomous Fire Fighting Rover (DOI: 10.55041/ISJEM03608)', palette: crimson },
-  { label: 'Industrial stage', title: 'Siemens Verna', detail: 'Apprenticeship & Internship • Technology Department', palette: ocean },
+  { label: 'Industrial stage', title: 'Siemens Verna', detail: 'On-Role Engineer • Technology Department', palette: ocean },
   { label: 'Systems project', title: 'Vortex Accelerator', detail: '32 parallel socket workers • Dynamic work-stealing', palette: violet },
   { label: 'Academic honour', title: 'Honours in IoT', detail: 'B.E. in Electronics & Communication Engineering', palette: jade },
   { label: 'Hardware bring-up', title: 'KiCad & PCBA', detail: 'Schematic interpretation • Signal tracing • Debugging', palette: amber },
   { label: 'Inspection software', title: 'Saki AOI (+30%)', detail: 'Defect diagnosis without database disturbance', palette: jade },
   { label: 'Robotics & SLAM', title: '2D-SLAM & Pi 5', detail: '360° YDLIDAR X2 • 80 KG payload chassis', palette: crimson },
   { label: 'AI in manufacturing', title: 'ETHON.AI on THT', detail: 'Machine learning inspection models deployed on lines', palette: ocean },
-  { label: 'Observational hobby', title: 'Astronomy', detail: 'Deep-sky telescope exploration & constellation tracking', palette: violet },
 ];
 
 /** Slides for the "▶ Play Intro" cinematic sequence. */
@@ -551,16 +563,16 @@ export type IntroSlide = { kicker: string; title: string; lines: string[]; chips
 
 export const introSlides: IntroSlide[] = [
   {
+    kicker: 'Current Role',
+    title: 'PCBA Test Engineer',
+    lines: ['Promoted to On-Role PCBA Test Engineer in Feb 2026', 'Technology Department · Siemens Verna, India', 'Leading board testing, In-Circuit Testing (ICT), Flying Probe & Saki AOI'],
+    chips: ['Siemens On-Role', 'PCBA Test Engineer', 'ICT / JTAG', 'Saki AOI'],
+  },
+  {
     kicker: 'Education',
     title: 'B.E. · Honours in IoT',
     lines: ['Agnel Institute of Technology and Design, Assagao, Goa', 'Electronics and Communication Engineering'],
     chips: ['Honours in IoT', 'AITD Goa'],
-  },
-  {
-    kicker: 'Work History',
-    title: 'Siemens Technology',
-    lines: ['Apprenticeship & Internship · Siemens Verna, India', 'SMT/THT automation, Saki AOI (+30% efficiency), reflow generators & ETHON.AI inspection'],
-    chips: ['Siemens', 'Saki AOI', 'Reflow Generators', 'ETHON.AI'],
   },
   {
     kicker: 'Published Research',
@@ -608,7 +620,7 @@ export const viewerProfiles: {
   {
     id: 'recruiter',
     name: 'Recruiter',
-    blurb: 'Resume, Siemens experience & skills first',
+    blurb: 'Resume, Siemens PCBA testing role & skills first',
     color: '#4cc9ff',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
