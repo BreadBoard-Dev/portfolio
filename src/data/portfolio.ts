@@ -6,6 +6,8 @@
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
+
 export const profile = {
   fullName: 'Prasad S. Gawas',
   displayName: 'Prasad Gawas',
@@ -23,10 +25,10 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/prasad-gawas-a2a3631a0',
     github: 'https://github.com/BreadBoard-Dev',
   },
-  resumePdf: '/assets/Prasad_Gawas_Resume.pdf',
+  resumePdf: `${base}assets/Prasad_Gawas_Resume.pdf`,
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: `${base}assets/portrait-720.webp`,
+    srcSet: `${base}assets/portrait-420.webp 420w, ${base}assets/portrait-720.webp 720w, ${base}assets/portrait-1100.webp 1100w`,
     alt: 'Portrait of Prasad Gawas',
   },
   interests: ['Robotics & Mechatronics', 'Test Automation & Hardware Validation', 'Embedded Systems & Edge AI'],
